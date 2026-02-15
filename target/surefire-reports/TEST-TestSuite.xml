@@ -1,118 +1,68 @@
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Automation Results</title>
-<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
-<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
-<style type="text/css"></style></head><body class="spa -report standard">
-  <div class="app">
-    <div class="layout">
-<div class="header navbar">
-<div class="vheader">
-<div class="nav-logo">
-<a href="#">
-<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
-</a>
-</div>
-<ul class="nav-left">
-<li class="search-box">
-<a class="search-toggle" href="#">
-<i class="search-icon fa fa-search"></i>
-<i class="search-icon-close fa fa-close"></i>
-</a>
-</li>
-<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
-</ul>
-<ul class="nav-right">
-<li class="m-r-10">
-<a href="#"><span class="badge badge-primary">API Automation Report</span></a>
-</li>
-<li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 15, 2026 09:41:04 pm</span></a>
-</li>
-</ul>
-</div>
-</div><div class="side-nav">
-<div class="side-nav-inner">
-<ul class="side-nav-menu">
-<li class="nav-item dropdown" onclick="toggleView('test-view')">
-<a id="nav-test" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
-<a id="nav-dashboard" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bar-chart"></i></span>
-</a>
-</li>
-</ul>
-</div>
-</div>      <div class="vcontainer">
-        <div class="main-content">
-<div class="test-wrapper row view test-view">
-  <div class="test-list">
-    <div class="test-list-tools">
-<ul class="tools pull-left">
-<li><a href="#"><span class="font-size-14">Tests</span></a></li>
-</ul>
-<ul class="tools text-right">
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
-<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
-<div class="dropdown-divider"></div>
-<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
-</ul>
-</li>
-</ul>
-</div>    <div class="test-list-wrapper scrollable">
-      <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testGetUser</p>
-            <p class="text-sm">
-              <span>9:41:04 pm</span> / <span>00:00:01:795</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testGetUser</h5>
-<span class='badge badge-success'>02.15.2026 9:41:04 pm</span>
-<span class='badge badge-danger'>02.15.2026 9:41:06 pm</span>
-<span class='badge badge-default'>00:00:01:795</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:41:06 pm</td>
-        <td>
-          <textarea readonly class="code-block">javax.net.ssl.SSLException: Certificate for <qa-env.com> doesn't match any of the subject alternative names: [*.qa-env.com]
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="8.566" tests="2" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/ankurshrivastava/git/API_Automation_Restassured/automation/target/test-classes:/Users/ankurshrivastava/git/API_Automation_Restassured/automation/target/classes:/Users/ankurshrivastava/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/ankurshrivastava/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/ankurshrivastava/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/ankurshrivastava/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/ankurshrivastava/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/ankurshrivastava/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/ankurshrivastava/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/ankurshrivastava/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/ankurshrivastava/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/ankurshrivastava/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/ankurshrivastava/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/ankurshrivastava/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/ankurshrivastava/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/ankurshrivastava/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/ankurshrivastava/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/ankurshrivastava/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/ankurshrivastava/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/ankurshrivastava/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ankurshrivastava/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/Users/ankurshrivastava/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/ankurshrivastava/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/ankurshrivastava/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/ankurshrivastava/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/ankurshrivastava/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/ankurshrivastava/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/ankurshrivastava/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/ankurshrivastava/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/ankurshrivastava/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/ankurshrivastava/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar:/Users/ankurshrivastava/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar:/Users/ankurshrivastava/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.jar:/Users/ankurshrivastava/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/Users/ankurshrivastava/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/ankurshrivastava/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/ankurshrivastava/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/ankurshrivastava/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/ankurshrivastava/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/ankurshrivastava/.m2/repository/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar:/Users/ankurshrivastava/.m2/repository/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/ankurshrivastava/git/API_Automation_Restassured/automation/target/surefire/surefirebooter-20260215214104468_3.jar /Users/ankurshrivastava/git/API_Automation_Restassured/automation/target/surefire 2026-02-15T21-41-04_433-jvmRun1 surefire-20260215214104468_1tmp surefire_0-20260215214104468_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/ankurshrivastava/git/API_Automation_Restassured/automation/target/test-classes:/Users/ankurshrivastava/git/API_Automation_Restassured/automation/target/classes:/Users/ankurshrivastava/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/ankurshrivastava/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/ankurshrivastava/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/ankurshrivastava/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/ankurshrivastava/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/ankurshrivastava/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/ankurshrivastava/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/ankurshrivastava/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/ankurshrivastava/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/ankurshrivastava/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/ankurshrivastava/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/ankurshrivastava/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/ankurshrivastava/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/ankurshrivastava/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/ankurshrivastava/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/ankurshrivastava/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/ankurshrivastava/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/ankurshrivastava/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/ankurshrivastava/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ankurshrivastava/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/Users/ankurshrivastava/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/ankurshrivastava/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/ankurshrivastava/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/ankurshrivastava/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/ankurshrivastava/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/ankurshrivastava/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/ankurshrivastava/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/ankurshrivastava/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/ankurshrivastava/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/ankurshrivastava/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar:/Users/ankurshrivastava/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar:/Users/ankurshrivastava/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.jar:/Users/ankurshrivastava/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/Users/ankurshrivastava/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/ankurshrivastava/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/ankurshrivastava/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/ankurshrivastava/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/ankurshrivastava/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/ankurshrivastava/.m2/repository/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar:/Users/ankurshrivastava/.m2/repository/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/ankurshrivastava"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-09-16"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/ankurshrivastava/git/API_Automation_Restassured/automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/ankurshrivastava/git/API_Automation_Restassured/automation/target/surefire/surefirebooter-20260215214104468_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25"/>
+    <property name="user.name" value="ankurshrivastava"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.6.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/ankurshrivastava/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/_0/wfbxzp59709gq20tfh6rlyc40000gn/T/"/>
+    <property name="java.version" value="25"/>
+    <property name="user.dir" value="/Users/ankurshrivastava/git/API_Automation_Restassured/automation"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="baseUrl" value="https://qa-env.com"/>
+    <property name="java.library.path" value="/Users/ankurshrivastava/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testGetUser" classname="tests.UserTest" time="1.803">
+    <failure message="Certificate for &lt;qa-env.com&gt; doesn&apos;t match any of the subject alternative names: [*.qa-env.com]" type="javax.net.ssl.SSLException"><![CDATA[javax.net.ssl.SSLException: Certificate for <qa-env.com> doesn't match any of the subject alternative names: [*.qa-env.com]
 	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:177)
 	at org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.verify(BrowserCompatHostnameVerifier.java:62)
 	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:153)
@@ -264,49 +214,27 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testCreateUser</p>
-            <p class="text-sm">
-              <span>9:41:06 pm</span> / <span>00:00:01:205</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testCreateUser</h5>
-<span class='badge badge-success'>02.15.2026 9:41:06 pm</span>
-<span class='badge badge-danger'>02.15.2026 9:41:07 pm</span>
-<span class='badge badge-default'>00:00:01:205</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:41:07 pm</td>
-        <td>
-          <textarea readonly class="code-block">javax.net.ssl.SSLException: Certificate for <qa-env.com> doesn't match any of the subject alternative names: [*.qa-env.com]
+]]></failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://qa-env.com/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testCreateUser" classname="tests.UserTest" time="1.202">
+    <failure message="Certificate for &lt;qa-env.com&gt; doesn&apos;t match any of the subject alternative names: [*.qa-env.com]" type="javax.net.ssl.SSLException"><![CDATA[javax.net.ssl.SSLException: Certificate for <qa-env.com> doesn't match any of the subject alternative names: [*.qa-env.com]
 	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:177)
 	at org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.verify(BrowserCompatHostnameVerifier.java:62)
 	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:153)
@@ -431,197 +359,23 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-<div class="test-content scrollable">
-<div class="test-content-tools">
-<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
-</div>
-<div class="test-content-detail"><div class="detail-body"></div></div>
-</div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>2</span>
-</span>
-<p class="name">javax.net.ssl.SSLException</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>javax.net.ssl.SSLException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:41:04 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>testGetUser</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:41:06 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>testCreateUser</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="container-fluid p-4 view dashboard-view">
-<div class="row">
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0">Started</p>
-<h3>Feb 15, 2026 09:41:04 pm</h3>
-</div></div>
-</div>
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0">Ended</p>
-<h3>Feb 15, 2026 09:41:07 pm</h3>
-</div></div>
-</div>
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
-</div></div>
-</div>
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0 text-fail">Tests Failed</p>
-<h3>2</h3>
-</div></div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Tests</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='parent-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
-</small>
-</div>
-<div>
-<small data-tooltip='100%'><b>2</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Log events</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='events-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
-<div>
-<small data-tooltip='100%'><b>2</b> events failed,
-<b data-tooltip='%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><div class="col-md-12">
-<div class="card"><div class="card-header"><p>Timeline</p></div>
-<div class="card-body pt-0"><div>
-<canvas id="timeline" height="120"></canvas>
-</div></div>
-</div>
-</div></div>
-<script>
-var timeline = {
-"testGetUser":1.795,"testCreateUser":1.205
-};
-</script>
-<div class="row">
-</div>
-</div>
-<script>
-var statusGroup = {
-parentCount: 5,
-passParent: 0,
-failParent: 2,
-warningParent: 0,
-skipParent: 0,
-childCount: 5,
-passChild: 0,
-failChild: 0,
-warningChild: 0,
-skipChild: 0,
-infoChild: 0,
-grandChildCount: 5,
-passGrandChild: 0,
-failGrandChild: 0,
-warningGrandChild: 0,
-skipGrandChild: 0,
-infoGrandChild: 0,
-eventsCount: 5,
-passEvents: 0,
-failEvents: 2,
-warningEvents: 0,
-skipEvents: 0,
-infoEvents: 0
-};
-</script>        </div>
-      </div>
-    </div>
-  </div>
-<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
-<script type="text/javascript"></script></body>
-</html>
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://qa-env.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Shreya",
+    "job": "QA Engineer"
+}
+]]></system-out>
+  </testcase>
+</testsuite>

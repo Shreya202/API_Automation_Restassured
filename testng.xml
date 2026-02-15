@@ -1,6 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Automation API Suite">
+    <parameter name="baseUrl" value="https://reqres.in/api"/>
 
     <listeners>
         <listener class-name="listeners.ExtentTestListener"/>
@@ -13,3 +14,4 @@
     </test>
 
 </suite>
+
